@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@370&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  overflow: auto;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+
+.navbar {
+  background-color: #465d5d;
+}
+
+.fury-companion-section {
+  background-color: #465d5d;
+  height: 450px;
+  border-radius: 5px;
+  position: relative;
+
+  &--content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+}
+
+.navbar-header {
+  & p {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  & img {
+    max-width: 1%;
+  }
+}
+.span-link {
+  color: #ffffff;
+
+  &--nav {
+      color: #ffffff;
+
+      &--home {
+          font-size: 2rem;
+          color: #ffffff;
+      }
+  }
+
+}
+
+.banner-section {
+  background-image: url(./assets/background.svg);
+  box-shadow: 5px 8px 10px #888888;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  & .banner-header {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+
+    & .banner-btn {
+        background-color: #E99D34;
+        border-radius: 1rem;
+        transition: 0.3s ease-in-out;
+    }
+    & .banner-btn:hover {
+        transform: scale(1.3);
+    }
+  }
+}
+
+span {
+    
+}
+
+.banner-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-section {
+    margin-top: 11rem;
+    & p {
+        font-size: 1.5rem;  
+    }
+    &-content {
+        color: #465d5d;
+    }
+}
+
+.card-section {
+    margin-top: 11rem;
+
+}
+.cardtext {
+    color: #465d5d;
+}
+
+.best-seller-section {
+  margin-top: 11rem;
+  & p {
+      font-size: 1.5rem;  
+  }
+  &-content {
+      color: #465d5d;
+  }
+}
+
+.img-width {
+  max-width: 70% !important;
+}

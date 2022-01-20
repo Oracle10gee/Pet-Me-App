@@ -48,19 +48,17 @@ li {
   color: #ffffff;
 
   &--nav {
+    color: #ffffff;
+
+    &--home {
+      font-size: 2rem;
       color: #ffffff;
-
-      &--home {
-          font-size: 2rem;
-          color: #ffffff;
-      }
+    }
   }
-
 }
 
 .banner-section {
   background-image: url(./assets/background.svg);
-  box-shadow: 5px 8px 10px #888888;
   height: 900px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,56 +73,115 @@ li {
     color: white;
     font-size: 4rem;
     font-weight: 600;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
 
     & .banner-btn {
-        background-color: #E99D34;
-        border-radius: 1rem;
-        transition: 0.3s ease-in-out;
+      background-color: #e99d34;
+      border-radius: 1rem;
+      transition: 0.3s ease-in-out;
     }
     & .banner-btn:hover {
-        transform: scale(1.3);
+      transform: scale(1.3);
     }
   }
 }
 
 span {
-    
 }
 
 .banner-nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .text-section {
-    margin-top: 11rem;
-    & p {
-        font-size: 1.5rem;  
-    }
-    &-content {
-        color: #465d5d;
-    }
+  margin-top: 11rem;
+  & p {
+    font-size: 1.5rem;
+  }
+  &-content {
+    color: #465d5d;
+  }
 }
 
 .card-section {
-    margin-top: 11rem;
-
+  margin-top: 11rem;
 }
 .cardtext {
-    color: #465d5d;
+  color: #465d5d;
 }
 
 .best-seller-section {
   margin-top: 11rem;
   & p {
-      font-size: 1.5rem;  
+    font-size: 1.5rem;
   }
   &-content {
-      color: #465d5d;
+    color: #465d5d;
   }
 }
 
 .img-width {
-  max-width: 70% !important;
+  max-width: 80% !important;
+}
+
+.product-row {
+  transition: 0.3s ease-in;
+}
+
+.product-row:hover {
+  background-color: #e8f7ee;
+  overflow-y: auto;
+}
+
+.product-btn {
+  display: flex;
+  justify-content: center;
+  &--shop {
+    background-color: #465d59;
+    border-radius: 1rem;
+  }
+}
+
+.divider {
+  margin-left: 7rem;
+  width: 80%;
+  border-bottom: 0.1rem solid #b8c4bb;
+  border-color: #b8c4bb;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.075) !important;
+}
+.text-section-animals {
+  position: relative;
+  margin-top: 5rem;
+  & p {
+    font-size: 1.5rem;
+    color: #e99d34;
+  }
+  & img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.get-started-section {
+  background-color: #E8F7EE;
+  height: 450px;
+  border-radius: 5px;
+  position: relative;
+
+  &--content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & h4 {
+      color: #465d59;
+    }
+
+    & p {
+      color: #3D5E5E;
+    }
+  }
 }

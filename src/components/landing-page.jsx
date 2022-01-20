@@ -9,7 +9,8 @@ import Purina1 from "../assets/purina-1.svg";
 import Purina2 from "../assets/purina-2.svg";
 import Purina3 from "../assets/purina-3.svg";
 import Purina4 from "../assets/purina-4.svg";
-import { Link } from "react-router-dom";
+import Animals from "../assets/PET ICONS.svg";
+import { Link, useHistory } from "react-router-dom";
 import {
   Button,
   Nav,
@@ -18,7 +19,6 @@ import {
   Row,
   Col,
   Container,
-  Card,
   CardImg,
   CardText,
   CardBody,
@@ -26,7 +26,12 @@ import {
   Spinner,
 } from "reactstrap";
 
+
+
 const LandingPage = () => {
+
+  const history = useHistory();
+
   return (
     <div>
       <div className="navbar">
@@ -153,7 +158,7 @@ const LandingPage = () => {
             </Row>
           </Container>
         </div>
-        <div className="fury-companion-section">
+        <div className="fury-companion-section mt-5">
           <div className="fury-companion-section--content">
             <h4 className="mb-5">For your fury companion</h4>
             <h5 className="mb-5">
@@ -172,21 +177,20 @@ const LandingPage = () => {
               them all <br /> at your fingertips!
             </p>
           </div>
-          
         </div>
         <div className="best-seller-section">
-            <span className="text-center" style={{ color: "#465d5d" }}>
-              <h1>Shop our Bestsellers</h1>
-            </span>
-            <p className="text-center text-section-content mt-4">
-              We are giving you everything required to care for your lovely pets{" "}
-              <br /> from the best brands that exist.
-            </p>
-          </div>
+          <span className="text-center" style={{ color: "#465d5d" }}>
+            <h1>Shop our Bestsellers</h1>
+          </span>
+          <p className="text-center text-section-content mt-4">
+            We are giving you everything required to care for your lovely pets{" "}
+            <br /> from the best brands that exist.
+          </p>
+        </div>
         <div className="product-section mt-5">
-        <Container>
+          <Container>
             <Row>
-              <Col md="3">
+              <Col className="product-row" md="3">
                 <div>
                   <CardImg
                     top
@@ -205,9 +209,13 @@ const LandingPage = () => {
                   </CardBody>
                 </div>
               </Col>
-              <Col md="3">
+              <Col className="product-row" md="3">
                 <div>
-                  <CardImg classname="img-width" top src={Purina2} alt="Card image cap" />
+                  <CardImg
+                    className="img-width"
+                    src={Purina2}
+                    alt="Card image cap"
+                  />
                   <CardBody>
                     <CardTitle className="text-center">
                       <span style={{ color: "#E99D34" }}>PET SERVICES</span>
@@ -219,9 +227,16 @@ const LandingPage = () => {
                   </CardBody>
                 </div>
               </Col>
-              <Col md="3">
+              <Col className="product-row" md="3">
                 <div>
-                  <CardImg top width="100%" src={Purina3} alt="Card image cap" />
+                  <Link to="/">
+                    <CardImg
+                      top
+                      width="100%"
+                      src={Purina3}
+                      alt="Card image cap"
+                    />
+                  </Link>
                   <CardBody>
                     <CardTitle className="text-center">
                       <span style={{ color: "#E99D34" }}>
@@ -235,9 +250,14 @@ const LandingPage = () => {
                   </CardBody>
                 </div>
               </Col>
-              <Col md="3">
+              <Col className="product-row" md="3">
                 <div>
-                  <CardImg top width="100%" src={Purina4} alt="Card image cap" />
+                  <CardImg
+                    top
+                    width="100%"
+                    src={Purina4}
+                    alt="Card image cap"
+                  />
                   <CardBody>
                     <CardTitle className="text-center">
                       <span style={{ color: "#E99D34" }}>
@@ -252,9 +272,28 @@ const LandingPage = () => {
                 </div>
               </Col>
             </Row>
+            <div className="product-btn mt-5">
+              <Button className="product-btn--shop mb-5">
+                shop all products
+              </Button>
+            </div>
+            <div className="divider"></div>
+            <div className="text-section-animals">
+              <p className="text-center mb-5">ANIMALS WE CATER TO</p>
+              <img src={Animals} alt="animals" />
+            </div>
+            <div className="divider mt-5"></div>
           </Container>
         </div>
-        <div className="get-started-section"></div>
+        <div className="get-started-section mt-5">
+          <div className="get-started-section--content">
+            <h4 className="mb-3"><b>Ready to get started?</b></h4>
+            <p>
+              Your furry companion deserves the best care on the<br/> market! Join
+              our community and get access to other.
+            </p>
+          </div>
+        </div>
         <div className="footer-section"></div>
       </div>
     </div>

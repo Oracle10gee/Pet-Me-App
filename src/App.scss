@@ -58,7 +58,7 @@ li {
 }
 
 .banner-section {
-  background-image: url(./assets/background.svg);
+  background-image: url(./assets/banner-img.jpeg);
   height: 900px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,9 +84,6 @@ li {
       transform: scale(1.3);
     }
   }
-}
-
-span {
 }
 
 .banner-nav {
@@ -137,6 +134,7 @@ span {
 .product-btn {
   display: flex;
   justify-content: center;
+
   &--shop {
     background-color: #465d59;
     border-radius: 1rem;
@@ -183,5 +181,36 @@ span {
     & p {
       color: #3D5E5E;
     }
+  }
+}
+
+.signup-btn {
+  display: flex;
+  justify-content: center;
+  
+  &--register {
+    width: 45%;
+    background-color: #465d59;
+    border-radius: 1rem;
+    transition: 0.3s ease-in;
+  }
+  &--register:hover {
+    background-color: #465d59;
+    border-radius: 1rem;
+    transform: scale(1.03);
+  }
+
+  &--book {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #465d59;
+    transition: 0.3s ease-in;
+    margin-left: 0.7rem;
+  }
+  &--book:hover {
+    background-color: #fff;
+    color: #465d59;
+    transform: scale(1.03);
   }
 }

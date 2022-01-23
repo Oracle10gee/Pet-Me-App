@@ -26,10 +26,7 @@ import {
   Spinner,
 } from "reactstrap";
 
-
-
 const LandingPage = () => {
-
   const history = useHistory();
 
   return (
@@ -287,11 +284,19 @@ const LandingPage = () => {
         </div>
         <div className="get-started-section mt-5">
           <div className="get-started-section--content">
-            <h4 className="mb-3"><b>Ready to get started?</b></h4>
+            <h4 className="mb-3">
+              <b>Ready to get started?</b>
+            </h4>
             <p>
-              Your furry companion deserves the best care on the<br/> market! Join
-              our community and get access to other.
+              Your furry companion deserves the best care on the
+              <br /> market! Join our community and get access to other.
             </p>
+            <div className="signup-btn mt-5">
+              <Button className="signup-btn--register">
+                Register your pet
+              </Button>
+              <Button className="signup-btn--book">Book a service</Button>
+            </div>
           </div>
         </div>
         <div className="footer-section"></div>

@@ -2,9 +2,9 @@ import React from "react";
 import dog from "../assets/dog.svg";
 import cart from "../assets/cart 2.svg";
 import person from "../assets/person.svg";
-import CatCard from "../assets/cat-card.svg";
-import VetDoc from "../assets/vet-doc.svg";
-import BgCard from "../assets/bg-card.svg";
+import CatCard from "../assets/card-cat.png";
+import VetDoc from "../assets/doc-vet.png";
+import BgCard from "../assets/dog-lover.png";
 import Purina1 from "../assets/purina-1.svg";
 import Purina2 from "../assets/purina-2.svg";
 import Purina3 from "../assets/purina-3.svg";
@@ -299,7 +299,14 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="footer-section"></div>
+        <div className="footer-section">
+          <div className="footer-section-content">
+            <h1></h1>
+          </div>
+          <div>
+
+          </div>
+        </div>
       </div>
     </div>
   );
